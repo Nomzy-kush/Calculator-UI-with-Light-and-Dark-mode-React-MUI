@@ -1,6 +1,6 @@
 *, *::before, *::after {
   box-sizing: border-box;
-  font-family: Gotham Rounded, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: normal;
 }
 
@@ -10,6 +10,7 @@
 
 .dark {
   background-color: #282D35;
+  color: #fff;
 }
 
   .calculator-grid {
