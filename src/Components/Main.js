@@ -2,6 +2,9 @@ import React from 'react'
 import Button from '@mui/material/Button';
 
 const Main = () => {
+
+  const buttonTexts = ['DEL', '÷', 1, 2, 3, '*', 4, 5, 6, '+', 7, 8, 9, '-', '.', 0,];
+
   return (
     <main>
         <div class="calculator-grid">
@@ -10,23 +13,13 @@ const Main = () => {
     <div data-current-operand class="current-operand"></div>
     </div>
     <Button class="span-two" variant="contained">AC</Button>
-    <Button variant="contained">DEL</Button>
-    <Button variant="contained">÷</Button>
-    <Button variant="contained">1</Button>
-    <Button variant="contained">2</Button>
-    <Button variant="contained">3</Button>
-    <Button variant="contained">*</Button>
-    <Button variant="contained">4</Button>
-    <Button variant="contained">5</Button>
-    <Button variant="contained">6</Button>
-    <Button variant="contained">+</Button>
-    <Button variant="contained">7</Button>
-    <Button variant="contained">8</Button>
-    <Button variant="contained">9</Button>
-    <Button variant="contained">-</Button>
-    <Button variant="contained">.</Button>
-    <Button variant="contained">0</Button>
+
+    {buttonTexts.map((buttonText) =>
+    <Button variant='contained'>{buttonText}</Button> 
+    )}
+
     <Button variant="contained" class="span-two">=</Button>
+
     </div>
     </main>
   )
